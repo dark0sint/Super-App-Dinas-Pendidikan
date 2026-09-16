@@ -1,0 +1,26 @@
+# Server
+PORT=3000
+NODE_ENV=production
+
+# Keamanan / JWT (SSO Token)
+JWT_SECRET=ganti_dengan_string_acak_yang_sangat_rahasia
+JWT_EXPIRES_IN=8h
+REFRESH_TOKEN_EXPIRES_IN=30d
+
+# Database (SQLite file-based, tidak perlu install DB server terpisah)
+DB_PATH=./data/dindik.db
+
+# Upload
+UPLOAD_MAX_MB=20
+
+# Payment Gateway (contoh: Midtrans) - isi dengan kredensial resmi Dinas
+PAYMENT_GATEWAY_BASE_URL=https://api.sandbox.midtrans.com
+PAYMENT_GATEWAY_SERVER_KEY=REPLACE_ME
+PAYMENT_GATEWAY_CLIENT_KEY=REPLACE_ME
+
+# Face Recognition / Kartu Pintar Gateway
+DEVICE_WEBHOOK_SECRET=ganti_dengan_secret_perangkat_presensi
+
+# Admin awal (dibuat otomatis saat seed)
+SUPERADMIN_NIK=1000000000000001
+SUPERADMIN_PASSWORD=Admin#12345
